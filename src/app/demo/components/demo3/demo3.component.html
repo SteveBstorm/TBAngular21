@@ -1,0 +1,23 @@
+<h3>Pipes</h3>
+<p>Chaîne de caratère par défaut : {{maVar1}}</p>
+<p>UpperCase : {{maVar1 | uppercase}}</p>
+<p>LowerCase : {{maVar1 | lowercase}}</p>
+<p>TitleCase : {{maVar1 | titlecase}}</p>
+<hr />
+<p>Nombre : {{maVar2}}</p>
+<p>Decimal pipe : {{maVar2 | number : '3.1-4'}}</p>
+<p>Currency pipe : {{maVar2 | currency : 'USD'}}</p>
+<hr />
+<p>Date du jour : {{maVar3}}</p>
+<p>Date pipe : {{maVar3 | date : 'dd/MM/yy hh:mm'}}</p>
+
+<hr />
+<p>Custom pipe : To Usd Pipe </p>
+<p>{{maVar4}} EUR</p>
+<p>{{maVar4 | tousd | currency : "USD"}}</p>
+
+<hr />
+<p>Pipe avec paramètre</p>
+<p>{{maVar4}} EUR => {{maVar4 | currencyConverter : 'tousd'}}</p>
+<p>{{maVar4}} USD => {{maVar4 | currencyConverter : 'toeur'}}</p>
+<p>{{maVar4}} USD => {{maVar4 | currencyConverter : 'toyen'}}</p>
