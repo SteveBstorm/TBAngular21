@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ExerciceRoutingModule } from './exercice-routing.module';
 import { ExerciceComponent } from './exercice.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ExerciceComponent } from './exercice.component';
   ],
   imports: [
     CommonModule,
-    ExerciceRoutingModule
+    ExerciceRoutingModule,
+    FormsModule
   ],
   bootstrap : [ExerciceComponent]
 })

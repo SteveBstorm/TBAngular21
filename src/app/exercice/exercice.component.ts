@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciceComponent implements OnInit {
 
+  prop : string = 'azer'
+
   constructor() { }
 
   ngOnInit(): void {

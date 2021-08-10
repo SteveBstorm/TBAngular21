@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoComponent } from './demo.component';
+import { Demo1Component } from './components/demo1/demo1.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    DemoComponent
+    DemoComponent,
+    Demo1Component
   ],
   imports: [
     CommonModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    FormsModule
   ],
   bootstrap : [DemoComponent]
 })

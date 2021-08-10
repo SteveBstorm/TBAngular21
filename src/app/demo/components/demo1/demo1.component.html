@@ -1,0 +1,16 @@
+<h3>Property Bindings</h3>
+<h5>One-way Binding</h5>
+<p>{{maProp}} tout le monde</p>
+
+<!-- {{nomDePropriété}}  OneWay => Lecture d'une valeur comprise dans une propriété -->
+
+<h5>Two-ways binding</h5>
+<input type="text" [(ngModel)]="maProp">
+
+<!-- Ne pas oublier d'importer FormsModule dans les imports du module pour utiliser [(ngModel)]
+    Binding Two-ways => lecture et écriture
+-->
+
+<button (click)="maMethode()" >Click ici</button>
+<br />
+<label (mouseover)="maMethode()" >passe ici</label>
