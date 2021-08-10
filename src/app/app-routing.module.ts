@@ -4,11 +4,10 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path : 'about', component : AboutComponent, children : [
-    {path : 'home', component : HomeComponent},
-
-  ]},
-  {path : 'test', loadChildren : () => import('./test/test.module').then(m => m.TestModule)}
+  {path : 'about', component : AboutComponent},
+  {path : 'home', component : HomeComponent},
+  {path : 'demo', loadChildren : () => import('./demo/demo.module').then(m => m.DemoModule)},
+  {path : 'exercice', loadChildren : () => import('./exercice/exercice.module').then(m => m.ExerciceModule)}
 ];
 
 @NgModule({
