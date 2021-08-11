@@ -1,0 +1,9 @@
+<h3>Liste de course</h3>
+<input type="text" [(ngModel)]="article">
+<button (click)="ajouter()">Ajouter</button>
+<hr />
+<app-liste [liste]="listeArticle"
+           (deleteItem)="retirer($event)"
+></app-liste>
+
+<app-exo1></app-exo1>

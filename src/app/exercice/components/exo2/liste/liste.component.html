@@ -1,0 +1,7 @@
+<div style="border : black 1px solid">
+    <ul>
+        <li *ngFor="let article of liste; let i = index">
+            {{article}} <button (click)="supprimer(i)">Supprimer</button>
+        </li>   
+    </ul>
+</div>

@@ -7,6 +7,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class EnfantComponent implements OnInit {
 
+  monTexte :string = ""
+
   @Input() title : string = ""
   @Input() contenu : string = ""
 
@@ -18,7 +20,7 @@ export class EnfantComponent implements OnInit {
   }
 
   maMethode() {
-    this.monEvent.emit("Salut papa")
+    this.monEvent.emit(this.monTexte)
   }
 
 }

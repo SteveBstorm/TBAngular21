@@ -20,10 +20,12 @@ export class AppComponent {
       {url : 'demo/demo4', title : 'Demo 4 - Compenent Directives'},
       {url : 'demo/demo5', title : 'Demo 5 - Structural Directives'},
       {url : 'demo/demo6', title : 'Demo 6 - @Input / @Output'},
+      
 
     ]},
     {title : 'Exercices', children : [
-      {url : 'exercice/exo1', title : 'Chronomètre'}
+      {url : 'exercice/exo1', title : 'Chronomètre'},
+      {url : 'exercice/exo2', title : 'Shopping List'},
     ]}
   ]
 }
