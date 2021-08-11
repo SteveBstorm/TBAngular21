@@ -1,0 +1,26 @@
+<h3>Structural Directives</h3>
+<h4>NgIf</h4>
+<div style="border : 1px black solid; background-color: lightgrey;" (click)="toggle()">
+    <p style="cursor: pointer;">Click ici</p>
+</div>
+<div style="border : 1px black solid" *ngIf="isToggled">
+    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aperiam eius molestiae odit distinctio natus tempora nemo, mollitia blanditiis esse labore cumque aspernatur eaque necessitatibus eos id alias, nisi odio.</p>
+</div>
+<hr />
+<h4>NgFor</h4>
+<ul>
+    <li *ngFor="let jeu of liste; let i = index; let pair = even">
+        <p appSurligner [ngClass]="{maClass : pair}">{{i}} - {{jeu}}</p>
+    </li>
+</ul>
+
+<hr />
+<h4>NgSwitch</h4>
+<input type="text" [(ngModel)]="maProp">
+
+<div [ngSwitch]="maProp">
+    <div *ngSwitchCase="1">Pomme</div>
+    <div *ngSwitchCase="2">Poire</div>
+    <div *ngSwitchCase="3">Peche</div>
+    <div *ngSwitchDefault>Tappez 1 2 ou 3</div>
+</div>
