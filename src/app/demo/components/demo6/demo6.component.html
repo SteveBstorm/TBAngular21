@@ -1,0 +1,21 @@
+<h3>Demo @Input/@Output</h3>
+<p>Je suis dans le composant Parent</p>
+
+<app-enfant 
+    title="Titre du composant Enfant"
+    [contenu]="texte"
+    (monEvent)="reponseDuChildren($event)"
+    >
+    <div>
+        <p>Contenu supplémentaire qui nous vient du parent</p>
+        <ul>
+            <li>C#</li>
+            <li>Angular</li>
+            <li>Javascript</li>
+            <li>...</li>
+        </ul>
+    </div>
+</app-enfant>
+
+<hr>
+<p>En attente de l'enfant : {{messageDuChildren}}</p>
