@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrencyConverterPipe } from './pipe/currency-converter.pipe';
 import { TotimePipe } from './pipe/totime.pipe';
 import { SurlignerDirective } from './directives/surligner.directive';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
 
 
 
@@ -12,7 +13,8 @@ import { SurlignerDirective } from './directives/surligner.directive';
     ToUsdPipe,
     CurrencyConverterPipe,
     TotimePipe,
-    SurlignerDirective
+    SurlignerDirective,
+    FourofourComponent
   ],
   imports: [
     FormsModule,

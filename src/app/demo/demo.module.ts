@@ -13,6 +13,11 @@ import { Demo6Component } from './components/demo6/demo6.component';
 import { EnfantComponent } from './components/demo6/enfant/enfant.component';
 import { Demo7Component } from './components/demo7/demo7.component';
 import { Demo8Component } from './components/demo8/demo8.component';
+import { Demo9Component } from './components/demo9/demo9.component';
+import { CibleComponent } from './components/demo9/cible/cible.component';
+import { Demo10Component } from './components/demo10/demo10.component';
+import { Demo11Component } from './components/demo11/demo11.component';
+import { ResovledComponent } from './components/demo11/resovled/resovled.component';
 
 
 
@@ -28,6 +33,11 @@ import { Demo8Component } from './components/demo8/demo8.component';
     EnfantComponent,
     Demo7Component,
     Demo8Component,
+    Demo9Component,
+    CibleComponent,
+    Demo10Component,
+    Demo11Component,
+    ResovledComponent,
   ],
   imports: [
     CommonModule,
