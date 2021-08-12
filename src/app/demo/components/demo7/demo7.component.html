@@ -1,0 +1,4 @@
+<h3>Demo Service + Injection</h3>
+<p>Statut de connexion : {{LocalIsConnected}}</p>
+<button (click)="login()" *ngIf="!LocalIsConnected">Se connecter</button>
+<button (click)="logout()" *ngIf="LocalIsConnected">Se déconnecter</button>                 

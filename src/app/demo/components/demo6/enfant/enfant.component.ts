@@ -22,5 +22,5 @@ export class EnfantComponent implements OnInit {
   maMethode() {
     this.monEvent.emit(this.monTexte)
   }
-
+              
 }

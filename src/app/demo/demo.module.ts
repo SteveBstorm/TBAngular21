@@ -11,6 +11,8 @@ import { Demo4Component } from './components/demo4/demo4.component';
 import { Demo5Component } from './components/demo5/demo5.component';
 import { Demo6Component } from './components/demo6/demo6.component';
 import { EnfantComponent } from './components/demo6/enfant/enfant.component';
+import { Demo7Component } from './components/demo7/demo7.component';
+
 
 
 @NgModule({
@@ -23,12 +25,14 @@ import { EnfantComponent } from './components/demo6/enfant/enfant.component';
     Demo5Component,
     Demo6Component,
     EnfantComponent,
+    Demo7Component,
   ],
   imports: [
     CommonModule,
     DemoRoutingModule,
     SharedModule
   ],
-  bootstrap : [DemoComponent]
+  bootstrap : [DemoComponent],
+  providers : []
 })
 export class DemoModule { }
