@@ -1,0 +1,10 @@
+<div style="border: black 1px solid;">
+    <ul>
+        <li *ngFor="let article of listeArticle; let i = index">
+            {{article.qty}} - {{article.nom}}
+            <button (click)="addQty(i)">+</button>
+            <button (click)="remQty(i)">-</button>
+            <button (click)="supprimer(i)">X</button>
+        </li>
+    </ul>
+</div>

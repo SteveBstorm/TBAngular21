@@ -1,0 +1,12 @@
+<h3>Liste de course (avec service)</h3>
+Article : <input type="text" [(ngModel)]="article">
+    <button (click)="ajout()">Ajouter</button>
+
+<app-liste-exo3
+    [listeArticle]="shoppingList"   
+    (ajoutQty)="addQty($event)"  
+    (retirerQty)="remQty($event)"  
+    (delete)="supprimer($event)"  
+>
+
+</app-liste-exo3>
