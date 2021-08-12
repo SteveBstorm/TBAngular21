@@ -12,6 +12,7 @@ import { Demo5Component } from './components/demo5/demo5.component';
 import { Demo6Component } from './components/demo6/demo6.component';
 import { EnfantComponent } from './components/demo6/enfant/enfant.component';
 import { Demo7Component } from './components/demo7/demo7.component';
+import { Demo8Component } from './components/demo8/demo8.component';
 
 
 
@@ -26,6 +27,7 @@ import { Demo7Component } from './components/demo7/demo7.component';
     Demo6Component,
     EnfantComponent,
     Demo7Component,
+    Demo8Component,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,24 @@
+<h3>Reactive Forms</h3>
+<form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+    <p>Nom : <input type="text" formControlName="nom"></p>
+    <p *ngIf="myFormGroup.controls['nom'].invalid">
+        {{myFormGroup.controls['nom'].errors ? myFormGroup.controls['nom'].errors['TropCourt'] : ''}}
+    </p>
+    <p>Prénom : <input type="text" formControlName="prenom"></p>
+    <p *ngIf="myFormGroup.controls['prenom'].invalid">
+        {{myFormGroup.controls['prenom'].errors ? myFormGroup.controls['prenom'].errors['TropCourtError'] : ''}}
+    </p>
+    <p>Email : <input type="email" formControlName="email"></p>
+    <p *ngIf="myFormGroup.controls['email'].value && myFormGroup.controls['email'].invalid">Un format d'adresse email valide est requis</p>
+
+    <button type="button" (click)="addControlToArray()">Ajouter un numero de tel</button>
+    <div *ngIf="getTelArray().controls != null" formArrayName="telephone">
+        <div *ngFor="let control of getTelArray().controls; let i = index">
+            <p>
+                tel {{i+1}} : <input type="text" [formControlName]="i">
+            </p>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="!myFormGroup.valid">Valider</button>
+</form>

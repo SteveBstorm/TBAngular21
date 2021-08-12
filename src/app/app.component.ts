@@ -21,6 +21,7 @@ export class AppComponent {
       {url : 'demo/demo5', title : 'Demo 5 - Structural Directives'},
       {url : 'demo/demo6', title : 'Demo 6 - @Input / @Output'},
       {url : 'demo/demo7', title : 'Demo 7 - Service et Injection'},
+      {url : 'demo/demo8', title : 'Demo 8 - Reactive Forms'},
       
 
     ]},
