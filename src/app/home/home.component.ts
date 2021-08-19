@@ -10,12 +10,15 @@ export class HomeComponent implements OnInit{
 
   HomeIsConnected : boolean = false
 
+  currentUser : string = ""
+
   constructor(
     private _authService : FakeAuthService
   ) { }
   
   ngOnInit(): void {
     this.HomeIsConnected = this._authService.isConnected
+    this.currentUser = localStorage.getItem('userName') ?? ""
   }
 
 }

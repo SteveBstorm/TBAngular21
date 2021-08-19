@@ -6,6 +6,8 @@ import { Demo10Component } from './components/demo10/demo10.component';
 import { Demo11Component } from './components/demo11/demo11.component';
 import { ObjectResolver } from './components/demo11/object.resolver';
 import { ResovledComponent } from './components/demo11/resovled/resovled.component';
+import { Demo12Component } from './components/demo12/demo12.component';
+import { Demo13Component } from './components/demo13/demo13.component';
 import { Demo2Component } from './components/demo2/demo2.component';
 import { Demo3Component } from './components/demo3/demo3.component';
 import { Demo4Component } from './components/demo4/demo4.component';
@@ -31,7 +33,9 @@ const routes: Routes = [
     {path : 'cible/:toto', component : CibleComponent},
     {path : 'demo10', canActivate : [AuthGuard] , component : Demo10Component},
     {path : 'demo11', component : Demo11Component},
-    {path : 'resolved/:index', resolve : {monObjet : ObjectResolver}, component : ResovledComponent}
+    {path : 'resolved/:index', resolve : {monObjet : ObjectResolver}, component : ResovledComponent},
+    {path : 'demo12', component : Demo12Component},
+    {path : 'demo13', component : Demo13Component},
 
   ]}
 ];

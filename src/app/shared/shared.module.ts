@@ -8,6 +8,7 @@ import { FourofourComponent } from './components/fourofour/fourofour.component';
 
 
 
+
 @NgModule({
   declarations: [
     ToUsdPipe,
@@ -18,7 +19,8 @@ import { FourofourComponent } from './components/fourofour/fourofour.component';
   ],
   imports: [
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   exports : [
     ToUsdPipe,
@@ -26,7 +28,8 @@ import { FourofourComponent } from './components/fourofour/fourofour.component';
     CurrencyConverterPipe,
     TotimePipe,
     SurlignerDirective,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ]
 })
 export class SharedModule { }

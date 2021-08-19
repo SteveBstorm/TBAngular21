@@ -18,6 +18,8 @@ import { CibleComponent } from './components/demo9/cible/cible.component';
 import { Demo10Component } from './components/demo10/demo10.component';
 import { Demo11Component } from './components/demo11/demo11.component';
 import { ResovledComponent } from './components/demo11/resovled/resovled.component';
+import { Demo12Component } from './components/demo12/demo12.component';
+import { Demo13Component } from './components/demo13/demo13.component';
 
 
 
@@ -38,6 +40,8 @@ import { ResovledComponent } from './components/demo11/resovled/resovled.compone
     Demo10Component,
     Demo11Component,
     ResovledComponent,
+    Demo12Component,
+    Demo13Component,
   ],
   imports: [
     CommonModule,

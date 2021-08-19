@@ -1,0 +1,16 @@
+<p>demo13 works!</p>
+<button (click)="login()">Se connecter</button><br />
+<button (click)="loadMovie()">Charger les films</button>
+
+<div *ngIf="movieList != []">
+    <p *ngFor="let movie of movieList">
+        {{movie.title}}
+    </p>
+</div>
+
+<button (click)="loadOneMovie()">Charger un film unique</button>
+<div style="border: black solid 1px;" *ngIf="currentMovie">
+    <p>Title : {{currentMovie.title}}</p>
+    <p>Description : {{currentMovie.description}}</p>
+    <p>Release Year : {{currentMovie.releaseYear}}</p>
+</div>

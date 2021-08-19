@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogService } from './demo/components/log.service';
 import { Link } from './shared/models/link.model';
 
 @Component({
@@ -8,6 +9,15 @@ import { Link } from './shared/models/link.model';
 })
 
 export class AppComponent {
+
+  currentUser : string = ""
+  localStorageUser : string = ""
+
+  constructor(
+    private session : LogService
+  ) { }
+
+
   title = 'Mon premier projet';
 
   listeLien : Link[] = [
@@ -25,6 +35,8 @@ export class AppComponent {
       {url : 'demo/demo9', title : 'Demo 9 - Routing'},
       {url : 'demo/demo10', title : 'Demo 10 - Guard'},
       {url : 'demo/demo11', title : 'Demo 11 - Resolver'},
+      {url : 'demo/demo12', title : 'Demo 12 - Sessions'},
+      {url : 'demo/demo13', title : 'Demo 13 - HttpClient'},
       
 
     ]},
@@ -34,4 +46,16 @@ export class AppComponent {
       {url : 'exercice/exo3', title : 'Shopping List++'},
     ]}
   ]
+
+  login() {
+    this.session.login()
+    this.currentUser = sessionStorage.getItem('userName') ?? ""
+    this.localStorageUser = localStorage.getItem('userName') ?? ""
+  }
+
+  logout() {
+    this.session.logout()
+    this.currentUser = sessionStorage.getItem('userName') ?? ""
+    this.localStorageUser = localStorage.getItem('userName') ?? ""
+  }
 }
